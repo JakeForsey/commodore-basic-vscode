@@ -1,0 +1,32 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "basic",
+    "scopeName": "source.basic",
+    "patterns": [
+        {
+            "match": "^[0-9]+",
+            "name": "entity.other.attribute-name"
+        },
+        {
+            "match": "([0-9\\.]+)",
+            "name": "constant.numeric"
+        },
+        {
+            "match": "PRINT|print|INPUT|input|DIM|dim",
+            "name": "support.function"
+        },
+        {
+            "match": "endif|ENDIF|if|IF|then|THEN|else|ELSE|return|RETURN|goto|GOTO|gosub|GOSUB|for|FOR|to|TO|next|NEXT|exit|EXIT|and|AND|or|OR",
+            "name": "keyword.control"
+        },
+        {
+            "match": "REM .*|rem .*",
+            "name": "comment.line"
+        },
+        {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double"
+        }
+    ]
+}

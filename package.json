@@ -1,0 +1,22 @@
+ {
+     "name": "basic",
+     "displayName": "Basic",
+     "version": "0.0.1",
+     "engines": {
+         "vscode": ">=0.9.0-pre.1"
+     },
+     "publisher": "Jake Forsey",
+     "contributes": {
+         "languages": [{
+             "id": "basic",
+             "aliases": ["Basic", "basic"],
+             "extensions": [".basic"],
+             "configuration": "./language-configuration.json"
+         }],
+         "grammars": [{
+             "language": "basic",
+             "scopeName": "source.basic",
+             "path": "./syntaxes/basic.tmLanguage.json"
+         }]
+     }
+ }
